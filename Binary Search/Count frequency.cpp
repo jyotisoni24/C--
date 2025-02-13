@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 int longestOnes(vector<int>& nums, int k) {
     int cnt = 0;
     int startInd = 0;
@@ -19,9 +17,4 @@ int longestOnes(vector<int>& nums, int k) {
     }
 
     return maxLen;
-}
-int main(){
-    vector<int> v {0 , 0 , 1 , 1, 0, 0 , 1 , 1  , 1 , 1};
-    int k = 2;
-    cout<<"Maximum 1's length will be "<<maxConsecutive1s(v,k)<<endl;
 }
