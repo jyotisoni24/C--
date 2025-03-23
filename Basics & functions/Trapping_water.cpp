@@ -8,12 +8,12 @@ int height(vector<int> &heights){
     int rightMax = 0;
     for(int i = 0 ; i < n ; i++){
         forw[i] = max(heights[i] , leftMax);
-        // forw.push_back(max(heights[i] , leftMax));
+        //forw.push_back(max(heights[i] , leftMax));
         if(heights[i] > leftMax) leftMax = heights[i];
     }
      for(int i = n-1 ; i >= 0 ; i--){
         back[i] = max(heights[i] , rightMax);
-        // back.push_back(max(heights[i] , rightMax));
+        //back.push_back(max(heights[i] , rightMax));
         if(heights[i] > rightMax) rightMax = heights[i];
     }
     int pani = 0;

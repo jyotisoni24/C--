@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int longestOnes(vector<int>& nums, int k) {
+int maxConsecutive1s(vector<int>& nums, int k) {
     int cnt = 0;
     int startInd = 0;
     int maxLen = 0, j = 0;
